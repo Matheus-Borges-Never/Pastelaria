@@ -1,0 +1,24 @@
+{
+  "cadastros": [
+    {
+      "id": "1",
+      "nome": "Matheus",
+      "data": "2022-09-08",
+      "telefone": 1635269874,
+      "celular": 16988016082,
+      "email": "matheusborgespaulino@gmail.com",
+      "endereco": "Av. São Vicente, 4100",
+      "foto": "C:\fakepath\bytebank.png"
+    },
+    {
+      "id": "2",
+      "nome": "Marcos",
+      "data": "2002-06-08",
+      "telefone": 1635569874,
+      "celular": 16989016082,
+      "email": "teste4@gmail.com",
+      "endereco": "Av. São Vicente, 4600",
+      "foto": "C:\fakepath\bytebank.png"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import { CadastroService } from './services/cadastro.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,11 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Pastelaria';
-  logins: any[] = [];
+
+  constructor(private service: CadastroService){
+
+  }
 
 
   login($event){
-    console.log($event);
-    this.logins.push($event);
+    this.service.adicionar($event);
   }
 }
