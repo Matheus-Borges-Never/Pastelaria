@@ -1,20 +1,15 @@
-import { CadastroService } from './services/cadastro.service';
+import { TransferenciaService } from './services/transferencia.service';
 import { Component } from '@angular/core';
 
 @Component({
-  templateUrl: './app.component.html',
   selector: 'app-root',
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Pastelaria';
+  title = 'bytebank';
+  transferencias: any[] = [];
 
-  constructor(private service: CadastroService){
+  constructor(private service: TransferenciaService) {}
 
-  }
-
-
-  login($event){
-    this.service.adicionar($event);
-  }
 }

@@ -1,3 +1,7 @@
-<app-login-gestor (aoLogar)="login($event)" ></app-login-gestor>
-
-<app-cadastro></app-cadastro>
+<header>
+  <a routerLink="extrato" routerLinkActive="ativo">Bytebank</a>
+  <a routerLink="nova-transferencia" routerLinkActive="ativo"> Nova Transferência</a>
+</header>
+<main>
+  <router-outlet ></router-outlet>
+</main>
