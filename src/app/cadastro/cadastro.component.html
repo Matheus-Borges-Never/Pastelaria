@@ -11,7 +11,7 @@
     </thead>
     <tbody *ngIf="logins.length > 0; else listaVazia">
       <tr class="tabela__linha" *ngFor="let logar of logins">
-        <td class="tabela__conteudo"> <img [src]="'{{ logar?.foto }}'" height="50" alt=""></td>
+        <td class="tabela__conteudo"> <img [src]="logar?.foto" height="50" alt=""></td>
         <td class="tabela__conteudo">{{ logar?.nome }}</td>
         <td class="tabela__conteudo">{{ logar?.data }}</td>
         <td class="tabela__conteudo"> {{logar?.telefone }}</td>
