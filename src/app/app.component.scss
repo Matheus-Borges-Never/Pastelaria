@@ -1,0 +1,28 @@
+.topo {
+  background-color: rgb(156, 109, 8);
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .ativo {
+    display: none;
+  }
+
+  .texto-marrom {
+    color: rgb(156, 109, 8);
+  }
+
+
+}
+
+
+main {
+  background-color: #fcfcfc;
+  padding: var(--padding);
+}
