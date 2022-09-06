@@ -1,3 +1,33 @@
-<app-login-gestor (aoLogar)="login($event)" ></app-login-gestor>
-
-<app-cadastro [logins]="logins" ></app-cadastro>
+<header>
+  <nav class="navbar topo fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><b>Pastelaria</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title texto-marrom" id="offcanvasNavbarLabel"><b>Pastelaria</b></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body sumir">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active texto-marrom" aria-current="page" routerLink="cadastro" routerLinkActive=""><h6><b>Usuários Cadastrados</b></h6></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active texto-marrom" aria-current="page" routerLink="novo-cadastro" routerLinkActive=""><h6><b>Cadastrar Novos Usuários</b></h6></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active btn btn-danger" aria-current="page" routerLink="login" routerLinkActive="" >Sair</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>

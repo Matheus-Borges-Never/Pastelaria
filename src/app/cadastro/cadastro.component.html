@@ -1,9 +1,29 @@
-<div *ngFor="let logar of logins" >
-<p>Nome: {{ logar?.nome }}</p>
-<p>Data de Nascimento: {{ logar?.data }}</p>
-<p>Telefone Fixo: {{ logar?.telefone }}</p>
-<p>Celular: {{ logar?.celular }}</p>
-<p>Email: {{ logar?.email }}</p>
-<p>Endereço: {{ logar?.endereco }}</p>
-<p>Foto: {{ logar?.foto }}</p>
-</div>
+<section class="container">
+  <table class="tabela">
+    <thead class="tabela__cabecalho">
+      <th class="tabela__cabecalho__conteudo">Foto</th>
+      <th class="tabela__cabecalho__conteudo">Nome</th>
+      <th class="tabela__cabecalho__conteudo">Data</th>
+      <th class="tabela__cabecalho__conteudo">Tel. Fixo</th>
+      <th class="tabela__cabecalho__conteudo">Celular</th>
+      <th class="tabela__cabecalho__conteudo">Email</th>
+      <th class="tabela__cabecalho__conteudo">Endereço</th>
+    </thead>
+    <tbody *ngIf="logins.length > 0; else listaVazia">
+      <tr class="tabela__linha" *ngFor="let logar of logins">
+        <td class="tabela__conteudo">{{ logar?.foto }}</td>
+        <td class="tabela__conteudo">{{ logar?.nome }}</td>
+        <td class="tabela__conteudo">{{ logar?.data }}</td>
+        <td class="tabela__conteudo">{{ logar?.telefone }}</td>
+        <td class="tabela__conteudo">{{ logar?.celular }}</td>
+        <td class="tabela__conteudo">{{ logar?.email }}</td>
+        <td class="tabela__conteudo">{{ logar?.endereco }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #listaVazia>
+    <div class="alert alert-danger" role="alert">
+      Nenhuma operação cadastrada
+    </div>
+  </ng-template>
+</section>

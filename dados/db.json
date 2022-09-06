@@ -1,0 +1,104 @@
+{
+  "cadastros": [
+    {
+      "id": "1",
+      "nome": "Matheus",
+      "data": "2022-09-08",
+      "telefone": 1635269874,
+      "celular": 16988016082,
+      "email": "matheusborgespaulino@gmail.com",
+      "endereco": "Av. São Vicente, 4100",
+      "foto": "C:\fakepath\bytebank.png"
+    },
+    {
+      "id": "2",
+      "nome": "Marcos",
+      "data": "2002-06-08",
+      "telefone": 1635569874,
+      "celular": 16989016082,
+      "email": "teste4@gmail.com",
+      "endereco": "Av. São Vicente, 4600",
+      "foto": "C:\fakepath\bytebank.png"
+    },
+    {
+      "nome": "Teste",
+      "data": "2001-12-31",
+      "telefone": 169595,
+      "celular": 169595,
+      "email": "teste@teste.com",
+      "endereco": "Algo 1212",
+      "foto": "C:\\fakepath\\base-CONTRATO.png",
+      "id": "FxMS_Dc"
+    },
+    {
+      "nome": "Teste",
+      "data": "2022-09-02",
+      "telefone": 16988016082,
+      "celular": 65656,
+      "email": "teste2@teste.com",
+      "endereco": "Algo 1212",
+      "foto": "C:\\fakepath\\bytebank.png",
+      "id": "qwGFwSX"
+    },
+    {
+      "nome": "Alex Fernando",
+      "data": "2022-09-01",
+      "telefone": 1635269874,
+      "celular": 16988012536,
+      "email": "teste3@teste.com",
+      "endereco": "Teste teste 26",
+      "foto": "C:\\fakepath\\bytebank.png",
+      "id": "IkngNJq"
+    },
+    {
+      "nome": "Laura",
+      "data": "1995-01-20",
+      "telefone": 1635629874,
+      "celular": 16988556633,
+      "email": "laura@gmail.com",
+      "endereco": "Passaros 54",
+      "foto": "C:\\fakepath\\base CONTRATO.jpg",
+      "id": "bOQ5ZWZ"
+    },
+    {
+      "nome": "Andressa",
+      "data": "2000-05-10",
+      "telefone": 1635698745,
+      "celular": 26988554422,
+      "email": "andressa@gmail.com",
+      "endereco": "Rua Rua, 54",
+      "foto": "C:\\fakepath\\bytebank.png",
+      "id": "AvTglGM"
+    },
+    {
+      "nome": "ALguem",
+      "data": "2022-09-09",
+      "telefone": 5,
+      "celular": 4,
+      "email": "a@gmail.com",
+      "endereco": "Teste teste 26",
+      "foto": "C:\\fakepath\\bytebank.png",
+      "id": "NEdygxf"
+    },
+    {
+      "nome": "Gustavo",
+      "data": "2022-09-22",
+      "telefone": 1635698745,
+      "celular": 16966332255,
+      "email": "gustavo@gmail.com",
+      "endereco": "Rua Teste, 56",
+      "foto": "C:\\fakepath\\base-CONTRATO.png",
+      "id": "ezI9npM"
+    },
+    {
+      "nome": "Uchiha Sasuke",
+      "data": "2002-06-05",
+      "telefone": 1635666666,
+      "celular": 16966666666,
+      "email": "uchihasasuke@gmail.com",
+      "endereco": "Vila da Folha, 87",
+      "foto": "",
+      "id": "paRtoa8"
+    }
+  ]
+}
