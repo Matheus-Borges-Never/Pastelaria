@@ -1,3 +1,4 @@
+import { Observable, Subscriber } from 'rxjs';
 import { Cadastro } from './../models/cadastro.model';
 import { CadastroService } from './../services/cadastro.service';
 import { Component, EventEmitter, Output } from '@angular/core';
@@ -24,11 +25,14 @@ export class LoginGestorComponent {
   mensagem: string;
   alerta: string;
 
+  myimage;
+
   constructor(private service: CadastroService, private router: Router) {
 
   }
 
   login() {
+
 
     if ((this.email) == this.verifica && (this.nome) == this.verifica) {
       this.limparCampos();
@@ -38,10 +42,12 @@ export class LoginGestorComponent {
     } else {
       console.log('Solicitado login');
 
+      this.foto = this.myimage;
+
       const loginEmitir: Cadastro = {
         nome: this.nome, data: this.data,
         telefone: this.telefone, celular: this.celular,
-        email: this.email, endereco: this.endereco, foto: this.foto
+        email: this.email, endereco: this.endereco, foto: this.foto,
       };
 
       this.service.adicionar(loginEmitir)
@@ -64,5 +70,37 @@ export class LoginGestorComponent {
     this.email = "";
     this.endereco = "";
     this.foto = "";
+  }
+
+  onChange($event:Event){
+    const file=($event.target as HTMLInputElement).files[0];
+    this.convertToBase64(file);
+  }
+
+  convertToBase64(file: File){
+    const observable= new Observable((subscriber: Subscriber<any>) => {
+        this.readFile(file, subscriber);
+    });
+
+    observable.subscribe((d) => {
+      this.myimage = d;
+    });
+  }
+
+  readFile(file: File, subscriber: Subscriber<any>) {
+    const filereader = new FileReader();
+    filereader.readAsDataURL(file);
+
+    filereader.onload = () => {
+      subscriber.next(filereader.result);
+      subscriber.complete();
+    }
+
+    filereader.onerror = (error) => {
+      subscriber.error(error);
+      subscriber.complete();
+    }
+
+
   }
 }

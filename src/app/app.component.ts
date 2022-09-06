@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'Pastelaria';
 
   constructor(private service: CadastroService){
-
   }
+
+
 }
