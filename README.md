@@ -32,17 +32,17 @@ Sistema web onde cadastramos novos usuários!!!
 
 ## 📁 Acesso ao projeto
 
-**Faça o download do Angular no cmd com os comandos:**
-**npm install -g @angular/cli**
-**ng new bytebank**
-**cd bytebank**
-**ng serve --open**
-**Pegue somente a pasta "src" e "dados" do meu projeto e substitua pelo da sua pasta**
-**Faça o download do JSON Server no cmd dentro da pasta do projeto:**
-**npm install -g json-server**
-**json-server --watch db.json**
+**Faça o download do Angular no cmd com os comandos:**<br>
+**npm install -g @angular/cli**<br>
+**ng new pastelaria**<br>
+**cd pastelaria**<br>
+**ng serve --open**<br>
+**Pegue somente a pasta "src" e "dados" do meu projeto e substitua pelo da sua pasta**<br>
+**Faça o download do JSON Server no cmd dentro da pasta "dados" do projeto:**<br>
+**npm install -g json-server**<br>
+**json-server --watch db.json**<br>
 
 
 ## 🛠️ Abrir e rodar o projeto
-**Abra pelo VS Code e execute (é necessario o localhost:4200)**
+**Abra pelo VS Code e execute (é necessario o localhost:4200)**<br>
 **Localhost do Json localhost:3000**
